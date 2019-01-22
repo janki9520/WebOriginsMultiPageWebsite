@@ -1,0 +1,102 @@
+<html lang="en">
+	<head>
+	   
+           <title> HTTP </title>
+
+           <meta charset="utf-8"/>
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <meta name="description" content="Website portraying information about Inventions, Inventors and other Internet related technologies" />
+           <meta name="keywords" content="Knowledge website, Pioneers, Inventions, Internet, HTTP, SSH, FTP, Mosaic, Gopher, Lynx Multi-Page website"/>
+           <meta name="author" content="Janaki Patel">
+           
+           <link rel="stylesheet" type="text/css" href="css/style.css">
+           <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+           <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-colors-food.css">
+           <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+           
+  </head>
+
+  <body>
+  
+  <header>
+
+       <div id="top-header">
+          <h1> Project 2: Origins of the Web </h1> 
+       </div>
+      
+        <div class="nav-container">
+            <ul class="w3-navbar w3-food-cherry">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pioneers.html">Pioneers</a></li>
+              <li><a href="http.html" id="current">HTTP</a></li>
+              <li><a href="terminology.html">Terminology</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+  
+        </div>
+  
+    </header>
+
+    <div class="flex-container4">
+        
+
+        <div class="flex-item4">
+            <h2>HTTP Process</h2>
+
+            <br>
+            
+            <p>Internet (or The Web) is a massive distributed client/server information system as depicted in the diagram shown below:</p>
+
+            <p>Many applications are running concurrently over the Web, such as web browsing/surfing, e-mail, file transfer, audio & video streaming, and so on.  In order for proper communication to take place between the client and the server, these applications must agree on a specific application-level protocol such as HTTP, FTP, SMTP, POP, and etc. </p> 
+            <br>
+
+            <div class="w3-container">
+                <img src="images/http1.png" class="w3-square" alt="http process" style="width:60%">
+            </div>
+
+            <br>
+            
+            <p> The Hypertext Transfer Protocol (HTTP) is an application-level protocol for distributed, collaborative, hypermedia information systems. This is the foundation for data communication for the World Wide Web (i.e. internet) since 1990. HTTP is a generic and stateless protocol which can be used for other purposes as well using extensions of its request methods, error codes, and headers. </p>      
+
+            <p> HTTP is an <em>asymmetric request-response</em> client-server protocol as illustrated.  An HTTP client sends a request message to an HTTP server.  The server, in turn, returns a response message.  In other words, HTTP is a pull protocol, the client pulls information from the server (instead of server pushes information down to the client). </p>
+
+            <h4>Basic Features</h4>
+            <p>There are three basic features that make HTTP a simple but powerful protocol: </p>
+           
+            <ul>
+            <li><strong>HTTP is connectionless:</strong> The HTTP client, i.e., a browser initiates an HTTP request and after a request is made, the client disconnects from the server and waits for a response. The server processes the request and re-establishes the connection with the client to send a response back.</li>
+
+            <li><strong>HTTP is media independent:</strong> It means, any type of data can be sent by HTTP as long as both the client and the server know how to handle the data content. It is required for the client as well as the server to specify the content type using appropriate MIME-type.</li>
+
+            <li><strong>HTTP is stateless:</strong> As mentioned above, HTTP is connectionless and it is a direct result of HTTP being a stateless protocol. The server and client are aware of each other only during a current request. Afterwards, both of them forget about each other. Due to this nature of the protocol, neither the client nor the browser can retain information between different requests across the web pages. </li>
+          </ul>
+            <h4>Basic Architecture</h4>
+
+              <p>The following diagram shows a very basic architecture of a web application and depicts where HTTP sits: </p>
+
+              <div class="w3-container">
+                <img src="images/http2.jpg" class="w3-square" alt="http process" style="width:50%">
+              </div>
+              <br>
+              <p>The HTTP protocol is a request/response protocol based on the client/server based architecture where web browsers, robots and search engines, etc. act like HTTP clients, and the Web server acts as a server.</p>
+
+              <h4>Client</h4>
+
+              <p>The HTTP client sends a request to the server in the form of a request method, URI, and protocol version, followed by a MIME-like message containing request modifiers, client information, and possible body content over a TCP/IP connection.</p>
+
+              <h4>Server</h4>
+              <p>The HTTP server responds with a status line, including the message's protocol version and a success or error code, followed by a MIME-like message containing server information, entity meta information, and possible entity-body content.</p>        
+            
+            </div>
+       </div>
+
+
+   <div id="footer">
+     Copyright &copy 2016 Janaki Patel
+   </div>
+
+
+
+</body>
+
+</html>
